@@ -1,0 +1,100 @@
+:root {
+    --turquoise: #40E0D0;
+    --coral: #FF7F50;
+    --yellow: #FFD700;
+    --white: #FFFFFF;
+    --dark-green: #006400;
+  }
+  
+  body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--dark-green);
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, var(--turquoise) 25%, transparent 25%),
+                      linear-gradient(-45deg, var(--turquoise) 25%, transparent 25%),
+                      linear-gradient(45deg, transparent 75%, var(--turquoise) 75%),
+                      linear-gradient(-45deg, transparent 75%, var(--turquoise) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+  
+  header {
+    background-color: var(--coral);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--yellow);
+    font-size: 3rem;
+    text-shadow: 2px 2px var(--dark-green);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #hero {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #hero h2 {
+    color: var(--coral);
+    font-size: 2rem;
+  }
+  
+  .menu-item {
+    border-bottom: 1px solid var(--turquoise);
+    padding: 1rem 0;
+  }
+  
+  .menu-item h3 {
+    color: var(--coral);
+  }
+  
+  button {
+    background-color: var(--yellow);
+    color: var(--dark-green);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--coral);
+    color: var(--white);
+  }
+  
+  footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
